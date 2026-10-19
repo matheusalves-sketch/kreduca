@@ -1,0 +1,822 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="pt-BR" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>A Chave Certa | KR Educação Automotiva</title>
+<meta content="Vagas limitadas: aprenda com grandes nomes do automotivo a transformar sua oficina em uma máquina de lucro." name="description">
+<link rel="icon" href="favicon.ico" sizes="48x48">
+<link rel="icon" href="favicon.svg" type="image/svg+xml" sizes="any">
+<link rel="icon" href="favicon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            kr: {
+              dark: '#07090E',
+              card: '#0D121D',
+              surface: '#121826',
+              border: '#1E293B',
+              blue: '#0055FF',
+              lightBlue: '#38BDF8',
+              cyan: '#00F0FF',
+              neon: '#0099FF'
+            }
+          },
+          fontFamily: {
+            sans: ['Montserrat', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'sans-serif'],
+            heading: ['kallisto', 'Montserrat', 'system-ui', 'sans-serif'],
+            body: ['forma-djr-deck', 'Montserrat', 'system-ui', 'sans-serif'],
+          },
+          boxShadow: {
+            'neon-blue': '0 0 25px -4px rgba(0, 149, 255, 0.65), 0 0 10px -2px rgba(0, 149, 255, 0.4)',
+            'neon-strong': '0 0 35px 2px rgba(0, 120, 255, 0.75), inset 0 0 15px rgba(255, 255, 255, 0.4)',
+          }
+        }
+      }
+    }
+  </script>
+
+<link rel="stylesheet" href="https://use.typekit.net/lkv7gly.css">
+
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,400;1,700;1,900&amp;display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/style.css">
+
+<script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/framer-motion@11/dist/framer-motion.js" crossorigin></script>
+</head>
+<body class="bg-kr-dark text-slate-100 carbon-mesh selection:bg-blue-600 selection:text-white">
+
+<div class="fixed top-0 left-0 w-full h-1 z-[60] bg-transparent pointer-events-none" aria-hidden="true">
+<div id="scroll-progress-bar" class="h-full w-0 bg-gradient-to-r from-kr-blue via-kr-lightBlue to-kr-cyan shadow-[0_0_12px_2px_rgba(0,240,255,0.8)]"></div>
+</div>
+
+<div class="bg-gradient-to-r from-blue-900 via-blue-600 to-cyan-700 text-white text-xs sm:text-sm font-bold py-2.5 px-4 text-center sticky top-0 z-50 shadow-md">
+<div class="max-w-7xl mx-auto flex flex-wrap items-center justify-center gap-x-2 gap-y-1">
+<span class="inline-block w-2.5 h-2.5 rounded-full bg-red-400"></span>
+<span><span aria-hidden="true">🔥</span> VAGAS LIMITADAS</span>
+</div>
+</div>
+
+<header class="w-full border-b border-kr-border/80 bg-kr-dark/90 backdrop-blur-md sticky top-9 z-40">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+
+<a class="flex items-center gap-3 group" href="#" title="KR Educação">
+<img alt="KR Educação - Gestão Estratégica para Oficinas Mecânicas" class="h-10 sm:h-12 w-auto object-contain filter drop-shadow-[0_2px_12px_rgba(0,102,255,0.4)] transition-transform group-hover:scale-105" src="assets/img/logo-kr-educacao.svg">
+</a>
+
+<nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+<a class="hover:text-kr-cyan transition-colors" href="#metodo">O Método</a>
+<a class="hover:text-kr-cyan transition-colors" href="#dores">Diagnóstico</a>
+<a class="hover:text-kr-cyan transition-colors" href="#conteudo">Conteúdo</a>
+<a class="hover:text-kr-cyan transition-colors" href="#depoimentos">Embaixadores</a>
+<a class="hover:text-kr-cyan transition-colors" href="#garantia">Vagas</a>
+<a class="hover:text-kr-cyan transition-colors" href="https://www.google.com/maps/search/?api=1&amp;query=Apogeo+Nobre+Alphaville%2C+Avenida+Tambor%C3%A9%2C+1009%2C+Barueri+SP" data-apple="https://maps.apple.com/?q=Apogeo%20Nobre%20Alphaville&amp;address=Avenida%20Tambor%C3%A9%2C%201009%2C%20Alphaville%2C%20Barueri%2C%20SP" target="_blank" rel="noopener">Onde será?</a>
+</nav>
+
+<div class="flex items-center gap-4">
+<a class="btn-star-border" href="https://www.sympla.com.br/evento/1-encontro-kr-educacao-by-performance/3561439" target="_blank" rel="noopener">
+<span class="border-gradient-bottom" aria-hidden="true"></span>
+<span class="border-gradient-top" aria-hidden="true"></span>
+<span class="inner-content px-4 py-2 text-xs sm:px-5 sm:py-2.5 sm:text-sm gap-2">
+<span class="">GARANTIR VAGA</span>
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
+</span>
+</a>
+</div>
+</div>
+</header>
+
+<main>
+
+<section class="relative pt-12 pb-0 lg:pt-20 lg:pb-0 overflow-hidden">
+
+<div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[500px] bg-blue-600/15 rounded-full blur-3xl pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
+<div class="absolute inset-x-0 top-[38%] bottom-0 bg-gradient-to-b from-transparent via-blue-600/20 to-blue-500/35 blur-3xl pointer-events-none -z-10"></div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-x-8 gap-y-0 items-center">
+
+<div class="lg:col-span-6 lg:col-start-1 lg:row-start-1 flex flex-col items-start text-left">
+
+<div class="flex items-center gap-2 bg-kr-surface/80 border border-blue-500/30 px-3.5 py-1.5 rounded-md mb-6">
+<span class="w-2 h-2 rounded-full bg-kr-cyan"></span>
+<span class="montserrat-regular text-xs text-slate-300 uppercase tracking-widest">Vagas Limitadas · Grandes Nomes do Automotivo</span>
+</div>
+
+<h1 class="text-4xl sm:text-5xl lg:text-5xl font-black tracking-tight leading-[1.1] mb-6 text-white uppercase">
+              conhecimento que&nbsp;<br class="hidden sm:inline">
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-sky-300 to-white">gera performance</span></h1>
+<p class="text-lg sm:text-2xl text-slate-200 font-light leading-snug sm:leading-relaxed mb-0">
+              <span class="montserrat-bold text-white">Primeira imersão KR Educação,</span> um novo <span class="kr-underline montserrat-bold text-white">ecossistema do mercado automotivo.</span>
+</p>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Apogeo+Nobre+Alphaville%2C+Avenida+Tambor%C3%A9%2C+1009%2C+Barueri+SP" data-apple="https://maps.apple.com/?q=Apogeo%20Nobre%20Alphaville&amp;address=Avenida%20Tambor%C3%A9%2C%201009%2C%20Alphaville%2C%20Barueri%2C%20SP" target="_blank" rel="noopener" class="mt-4 lg:mb-8 inline-flex items-center gap-2 text-sm sm:text-base text-slate-200 hover:text-white transition-colors">
+<svg class="w-5 h-5 text-kr-cyan flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+<span><span class="montserrat-bold text-white">19 de novembro</span> · Apogeo Nobre Alphaville, Barueri/SP</span>
+</a>
+</div>
+
+<div class="lg:col-span-6 lg:col-start-7 lg:row-start-1 lg:row-span-2 flex justify-center items-center relative mt-4 lg:-mt-20 lg:self-stretch w-full">
+  <div class="absolute -inset-6 bg-gradient-to-t from-blue-600/50 via-cyan-500/30 to-transparent rounded-full blur-3xl pointer-events-none -z-10"></div>
+  <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-blue-500/30 rounded-full blur-3xl pointer-events-none -z-10"></div>
+
+  <div class="relative w-full max-w-2xl lg:h-full flex flex-col items-center">
+    <div class="kr-marquee kr-marquee--hero w-full">
+      <div class="kr-marquee-track">
+        <img src="assets/img/instrutor-adg.webp" alt="Instrutor ADG — KR Educação Automotiva" loading="lazy" draggable="false">
+        <img src="assets/img/instrutor-acf.webp" alt="Instrutor ACF — KR Educação Automotiva" loading="lazy" draggable="false">
+        <img src="assets/img/instrutor-hashimoto.webp" alt="Instrutor Hashimoto — KR Educação Automotiva" loading="lazy" draggable="false">
+        <img src="assets/img/instrutor-genz.webp" alt="Instrutor GenZ — KR Educação Automotiva" loading="lazy" draggable="false">
+        <img src="assets/img/instrutor-buratti.webp" alt="Instrutor Buratti — KR Educação Automotiva" loading="lazy" draggable="false">
+        <img src="assets/img/instrutor-adg.webp" alt="" aria-hidden="true" loading="lazy" draggable="false">
+        <img src="assets/img/instrutor-acf.webp" alt="" aria-hidden="true" loading="lazy" draggable="false">
+        <img src="assets/img/instrutor-hashimoto.webp" alt="" aria-hidden="true" loading="lazy" draggable="false">
+        <img src="assets/img/instrutor-genz.webp" alt="" aria-hidden="true" loading="lazy" draggable="false">
+        <img src="assets/img/instrutor-buratti.webp" alt="" aria-hidden="true" loading="lazy" draggable="false">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="lg:col-span-6 lg:col-start-1 lg:row-start-2 w-full sm:max-w-md justify-self-start flex flex-col items-center gap-4 mt-6 lg:mt-0 mb-8">
+<a class="kr-price-card block w-full" data-cu="p" href="https://www.sympla.com.br/evento/1-encontro-kr-educacao-by-performance/3561439" target="_blank" rel="noopener" aria-label="Garantir vaga: R$ 297,00 + 1 convidado">
+<span class="border-gradient-bottom" aria-hidden="true"></span>
+<span class="border-gradient-top" aria-hidden="true"></span>
+<div class="kr-price-card-inner px-5 py-5 text-center">
+<p class="montserrat-bold text-slate-300 text-sm sm:text-base uppercase tracking-widest">Apenas por</p>
+<div class="flex items-end justify-center gap-2 mt-1">
+<span class="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 to-[#21fd8f] pb-1.5">R$</span>
+<span class="price-countup-int text-6xl sm:text-7xl font-black leading-none text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 to-[#21fd8f] tabular-nums">297</span>
+<span class="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 to-[#21fd8f] pb-1">,00</span>
+</div>
+<p class="mt-2 inline-flex items-center gap-2 rounded-full border border-[#21fd8f]/60 bg-[#21fd8f]/15 px-4 py-1.5 text-sm sm:text-base font-black uppercase tracking-widest text-[#21fd8f]">+ 1 convidado</p>
+<p class="mt-3 inline-flex items-center gap-2 rounded-full border border-amber-400/60 bg-amber-400/15 px-4 py-1.5 text-xs sm:text-sm font-extrabold uppercase tracking-widest text-amber-300">
+<span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse" aria-hidden="true"></span>
+Vagas limitadas · 19 de novembro
+</p>
+</div>
+</a>
+<a class="btn-star-border w-full" href="https://www.sympla.com.br/evento/1-encontro-kr-educacao-by-performance/3561439" target="_blank" rel="noopener">
+<span class="border-gradient-bottom" aria-hidden="true"></span>
+<span class="border-gradient-top" aria-hidden="true"></span>
+<span class="inner-content w-full justify-center px-6 py-3 text-base sm:px-10 sm:py-4 sm:text-lg gap-3">
+<span class="">GARANTIR VAGA AGORA</span>
+<svg class="w-4 h-4 sm:w-5 sm:h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 7l5 5m0 0l-5 5m5-5H6" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path></svg>
+</span>
+</a>
+<a href="#faq" class="w-full text-center text-white bg-emerald-500 hover:bg-emerald-400 rounded-full px-6 py-3 text-sm font-semibold transition-colors shadow-lg">
+              Tirar Dúvidas
+            </a>
+</div>
+</div>
+</div>
+</section>
+
+<section class="py-14 bg-kr-surface/60 border-t border-b border-kr-border relative overflow-hidden">
+<div class="max-w-3xl mx-auto text-center px-4 sm:px-6 lg:px-8 mb-10">
+<div class="inline-flex items-center gap-2 bg-blue-950/60 border border-blue-800 px-3 py-1 rounded mb-3">
+<span class="w-2 h-2 rounded-full bg-kr-cyan"></span>
+<span class="montserrat-regular text-xs uppercase tracking-widest text-kr-cyan">Grandes Nomes do Automotivo</span>
+</div>
+<h2 class="text-2xl sm:text-3xl font-black text-white tracking-tight uppercase">
+TREINE COM AS MAIORES REFERÊNCIAS DO BRASIL
+</h2>
+<p class="text-slate-300 text-sm sm:text-base mt-2">
+Direto de quem define o padrão do motorsport e da gestão de oficina de alta performance no Brasil.
+</p>
+</div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" data-cu="m">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+<div class="border-r border-kr-border/50 last:border-0">
+<p class="text-3xl sm:text-4xl font-black text-white tracking-tight tabular-nums" data-countup-to="1" data-countup-suffix="º">0º</p>
+<p class="text-xs sm:text-sm text-slate-400 mt-1 uppercase font-semibold">Encontro Nacional KR Educação</p>
+</div>
+<div class="border-r border-kr-border/50 last:border-0">
+<p class="text-3xl sm:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-sky-300 tracking-tight tabular-nums" data-countup-to="12" data-countup-suffix="h">0h</p>
+<p class="text-xs sm:text-sm text-slate-400 mt-1 uppercase font-semibold">De Imersão</p>
+</div>
+<div class="border-r border-kr-border/50 last:border-0">
+<p class="text-3xl sm:text-4xl font-black text-white tracking-tight tabular-nums" data-countup-to="800" data-countup-prefix="+" data-countup-separator=".">+0</p>
+<p class="text-xs sm:text-sm text-slate-400 mt-1 uppercase font-semibold">Profissionais do Setor</p>
+</div>
+<div>
+<p class="text-3xl sm:text-4xl font-black text-kr-cyan tracking-tight tabular-nums" data-countup-to="100" data-countup-suffix="%">0%</p>
+<p class="text-xs sm:text-sm text-slate-400 mt-1 uppercase font-semibold">De Conteúdo Enriquecedor</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="py-20 lg:py-28 relative" id="dores">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="max-w-3xl mx-auto text-center mb-16">
+<span class="montserrat-regular text-xs uppercase text-kr-lightBlue tracking-widest bg-blue-950/60 px-3 py-1 rounded border border-blue-800">O Diagnóstico Real</span>
+<h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-4 uppercase">
+            Você é dono de oficina ou <span class="kr-underline montserrat-bold text-[#ff0033] drop-shadow-[0_0_14px_rgba(255,0,51,0.85)]">prisioneiro</span> da sua própria graxa?
+          </h2>
+<p class="text-slate-400 mt-4 text-base sm:text-lg">
+            Oficina cheia não é garantia de lucro. Veja se você comete algum destes erros:
+          </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+<div class="bg-kr-card border border-rose-900/40 hover:border-rose-600/60 transition-all p-6 rounded-xl flex flex-col justify-between group">
+<div>
+<div class="w-12 h-12 rounded-lg bg-rose-500/10 text-rose-500 flex items-center justify-center text-xl font-black mb-5 group-hover:scale-110 transition-transform">
+                01
+              </div>
+<h3 class="text-lg font-bold text-white mb-2">Trabalha 14h por dia e o caixa não fecha</h3>
+<p class="text-sm text-slate-300 leading-relaxed">
+                Você é o primeiro a chegar e o último a sair — e ainda assim sobra pouco no dia 30.
+              </p>
+</div>
+<div class="mt-6 pt-4 border-t border-slate-800/80 text-xs font-semibold text-rose-400 uppercase tracking-wide">
+              Falha na Precificação
+            </div>
+</div>
+
+<div class="bg-kr-card border border-rose-900/40 hover:border-rose-600/60 transition-all p-6 rounded-xl flex flex-col justify-between group">
+<div>
+<div class="w-12 h-12 rounded-lg bg-rose-500/10 text-rose-500 flex items-center justify-center text-xl font-black mb-5 group-hover:scale-110 transition-transform">
+                02
+              </div>
+<h3 class="text-lg font-bold text-white mb-2">Equipe desmotivada e erros repetitivos</h3>
+<p class="text-sm text-slate-300 leading-relaxed">
+                Diagnósticos atrasados, ferramentas sumidas e retrabalho constante corroem sua reputação.
+              </p>
+</div>
+<div class="mt-6 pt-4 border-t border-slate-800/80 text-xs font-semibold text-rose-400 uppercase tracking-wide">
+              Falta de Processos no Box
+            </div>
+</div>
+
+<div class="bg-kr-card border border-rose-900/40 hover:border-rose-600/60 transition-all p-6 rounded-xl flex flex-col justify-between group">
+<div>
+<div class="w-12 h-12 rounded-lg bg-rose-500/10 text-rose-500 flex items-center justify-center text-xl font-black mb-5 group-hover:scale-110 transition-transform">
+                03
+              </div>
+<h3 class="text-lg font-bold text-white mb-2">Preço cobrado no "achômetro"</h3>
+<p class="text-sm text-slate-300 leading-relaxed">
+                Você copia a tabela do vizinho sem saber o custo real da sua própria hora.
+              </p>
+</div>
+<div class="mt-6 pt-4 border-t border-slate-800/80 text-xs font-semibold text-rose-400 uppercase tracking-wide">
+              Insegurança Financeira
+            </div>
+</div>
+
+<div class="bg-kr-card border border-rose-900/40 hover:border-rose-600/60 transition-all p-6 rounded-xl flex flex-col justify-between group">
+<div>
+<div class="w-12 h-12 rounded-lg bg-rose-500/10 text-rose-500 flex items-center justify-center text-xl font-black mb-5 group-hover:scale-110 transition-transform">
+                04
+              </div>
+<h3 class="text-lg font-bold text-white mb-2">Impossível tirar 1 semana de férias</h3>
+<p class="text-sm text-slate-300 leading-relaxed">
+                Sem você lá, a oficina para e os orçamentos simplesmente não saem.
+              </p>
+</div>
+<div class="mt-6 pt-4 border-t border-slate-800/80 text-xs font-semibold text-rose-400 uppercase tracking-wide">
+              Dependência Operacional
+            </div>
+</div>
+</div>
+<div class="mt-12 text-center">
+<p class="text-slate-200 text-2xl sm:text-3xl font-black">
+            Reconheceu 2 ou mais?<br>
+<span class="text-kr-lightBlue montserrat-bold">Sua oficina precisa do <span class="kr-underline">ajuste certo da KR.</span></span>
+</p>
+</div>
+</div>
+</section>
+
+<section class="py-20 bg-kr-surface/50 border-y border-kr-border relative overflow-hidden" id="metodo">
+<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+<div class="inline-flex items-center gap-2 mb-6">
+<span class="h-1 w-6 bg-blue-500 rounded"></span>
+<span class="montserrat-regular text-xs uppercase tracking-widest text-kr-cyan">Nosso Propósito</span>
+</div>
+<h2 class="text-3xl sm:text-5xl font-black text-white tracking-tight leading-tight">
+            Desenvolver pessoas.<br>
+Fortalecer negócios. Elevar o setor.
+          </h2>
+<p class="text-slate-300 text-base sm:text-lg leading-relaxed mt-6 max-w-3xl">
+            A KR Educação nasce para transformar conhecimento em capacidade de evolução, dentro das oficinas, nas empresas, nas pistas e em toda a cadeia automotiva.
+          </p>
+<div class="flex flex-wrap gap-5 mt-10">
+<span class="kr-parallelogram-badge bg-blue-600 shadow-neon-blue"><span class="text-white font-bold text-sm sm:text-base px-10 sm:px-14 py-3 uppercase tracking-wide">Gestão</span></span>
+<span class="kr-parallelogram-badge bg-kr-cyan shadow-neon-blue"><span class="text-kr-dark font-bold text-sm sm:text-base px-10 sm:px-14 py-3 uppercase tracking-wide">Performance</span></span>
+<span class="kr-parallelogram-badge bg-blue-500 shadow-neon-blue"><span class="text-white font-bold text-sm sm:text-base px-10 sm:px-14 py-3 uppercase tracking-wide">Técnica</span></span>
+</div>
+<p class="text-slate-400 text-sm sm:text-base mt-10">
+            Um ecossistema de conteúdo, comunidade, especialistas, experiências e marcas parceiras.
+          </p>
+</div>
+</section>
+
+<section class="py-16 lg:py-24 relative" id="conteudo">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="max-w-3xl mb-10">
+<span class="montserrat-regular text-xs text-kr-cyan tracking-widest uppercase">04 • Experiência</span>
+<h2 class="text-2xl sm:text-4xl font-extrabold text-white mt-3">
+            A imersão KR Educação
+          </h2>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-5">
+<div class="bg-kr-card p-3.5 sm:p-5 rounded-lg sm:rounded-xl border-l-4 border-blue-500">
+<h3 class="text-sm sm:text-lg font-bold text-white mb-1 sm:mb-2 uppercase">Palco</h3>
+<p class="text-[11px] sm:text-sm text-slate-300 leading-snug">
+              Apresentação da KR Educação, especialistas, conteúdos e convidados.
+            </p>
+</div>
+<div class="bg-kr-card p-3.5 sm:p-5 rounded-lg sm:rounded-xl border-l-4 border-blue-500">
+<h3 class="text-sm sm:text-lg font-bold text-white mb-1 sm:mb-2 uppercase">Área de Marcas</h3>
+<p class="text-[11px] sm:text-sm text-slate-300 leading-snug">
+              Estandes e espaços para patrocinadores e parceiros.
+            </p>
+</div>
+<div class="bg-kr-card p-3.5 sm:p-5 rounded-lg sm:rounded-xl border-l-4 border-blue-500">
+<h3 class="text-sm sm:text-lg font-bold text-white mb-1 sm:mb-2 uppercase">Networking</h3>
+<p class="text-[11px] sm:text-sm text-slate-300 leading-snug">
+              Relacionamento entre oficinas, mercado, influenciadores e empresas.
+            </p>
+</div>
+<div class="bg-kr-card p-3.5 sm:p-5 rounded-lg sm:rounded-xl border-l-4 border-blue-500">
+<h3 class="text-sm sm:text-lg font-bold text-white mb-1 sm:mb-2 uppercase">Experiências</h3>
+<p class="text-[11px] sm:text-sm text-slate-300 leading-snug">
+              Demonstrações, ativações, produtos e interação com o público.
+            </p>
+</div>
+<div class="bg-kr-card p-3.5 sm:p-5 rounded-lg sm:rounded-xl border-l-4 border-blue-500">
+<h3 class="text-sm sm:text-lg font-bold text-white mb-1 sm:mb-2 uppercase">Conteúdo</h3>
+<p class="text-[11px] sm:text-sm text-slate-300 leading-snug">
+              Captação de vídeos, entrevistas, cortes e materiais pós-evento.
+            </p>
+</div>
+<div class="bg-kr-card p-3.5 sm:p-5 rounded-lg sm:rounded-xl border-l-4 border-blue-500">
+<h3 class="text-sm sm:text-lg font-bold text-white mb-1 sm:mb-2 uppercase">Lançamento</h3>
+<p class="text-[11px] sm:text-sm text-slate-300 leading-snug">
+              Lançamento da plataforma, propósito e próximos passos.
+            </p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="programacao" class="py-16 sm:py-24 border-y border-kr-border bg-gradient-to-b from-blue-950/70 via-kr-surface/60 to-kr-dark relative overflow-hidden scroll-mt-24">
+<div class="absolute inset-0 pointer-events-none flex justify-center"><div class="w-[640px] h-[320px] bg-[#21fd8f]/10 blur-3xl rounded-full"></div></div>
+<div class="relative max-w-4xl mx-auto px-4 sm:px-6 text-center">
+<span class="inline-block rounded-full border border-[#21fd8f]/50 bg-[#21fd8f]/10 text-[#21fd8f] text-xs sm:text-sm font-black uppercase tracking-widest px-4 py-1.5">19.11.2026 · Programação</span>
+<h3 class="text-3xl sm:text-6xl font-black text-white uppercase tracking-tight mt-5 leading-[1.05]">Programação com estratégias <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 to-[#21fd8f]">aplicáveis</span> para sua oficina</h3>
+<p class="montserrat-regular text-slate-300 text-base sm:text-xl mt-4">10 temas e 10 palestrantes para crescer e gerar lucro</p>
+<details class="group mt-8">
+<summary class="list-none cursor-pointer inline-flex items-center justify-center gap-3 rounded-full bg-[#21fd8f] hover:bg-emerald-300 text-kr-dark font-black uppercase tracking-wide text-base sm:text-xl px-8 sm:px-12 py-4 shadow-[0_0_34px_rgba(33,253,143,0.45)] transition-colors"><span>Ver programação completa</span><svg class="w-5 h-5 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path></svg></summary>
+<div class="mt-8 cursor-default grid lg:grid-cols-2 gap-8 text-left">
+<ul class="space-y-3"><li class="flex items-start gap-3 text-base sm:text-lg text-slate-100"><svg class="w-5 h-5 flex-shrink-0 mt-0.5 text-[#21fd8f]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path></svg><span>Gestão de oficinas e negócios</span></li><li class="flex items-start gap-3 text-base sm:text-lg text-slate-100"><svg class="w-5 h-5 flex-shrink-0 mt-0.5 text-[#21fd8f]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path></svg><span>Vendas e geração de valor</span></li><li class="flex items-start gap-3 text-base sm:text-lg text-slate-100"><svg class="w-5 h-5 flex-shrink-0 mt-0.5 text-[#21fd8f]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path></svg><span>Relacionamento com o cliente</span></li><li class="flex items-start gap-3 text-base sm:text-lg text-slate-100"><svg class="w-5 h-5 flex-shrink-0 mt-0.5 text-[#21fd8f]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path></svg><span>Liderança e gestão de equipes</span></li><li class="flex items-start gap-3 text-base sm:text-lg text-slate-100"><svg class="w-5 h-5 flex-shrink-0 mt-0.5 text-[#21fd8f]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path></svg><span>Tecnologia e inovação</span></li><li class="flex items-start gap-3 text-base sm:text-lg text-slate-100"><svg class="w-5 h-5 flex-shrink-0 mt-0.5 text-[#21fd8f]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path></svg><span>Novas gerações e futuro do mercado</span></li><li class="flex items-start gap-3 text-base sm:text-lg text-slate-100"><svg class="w-5 h-5 flex-shrink-0 mt-0.5 text-[#21fd8f]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path></svg><span>Performance e alta velocidade</span></li><li class="flex items-start gap-3 text-base sm:text-lg text-slate-100"><svg class="w-5 h-5 flex-shrink-0 mt-0.5 text-[#21fd8f]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path></svg><span>Desenvolvimento profissional</span></li><li class="flex items-start gap-3 text-base sm:text-lg text-slate-100"><svg class="w-5 h-5 flex-shrink-0 mt-0.5 text-[#21fd8f]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path></svg><span>Networking e conexões estratégicas</span></li><li class="flex items-start gap-3 text-base sm:text-lg text-slate-100"><svg class="w-5 h-5 flex-shrink-0 mt-0.5 text-[#21fd8f]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path></svg><span>Tendências do setor automotivo</span></li></ul>
+<div><h4 class="text-sm uppercase tracking-widest text-kr-cyan montserrat-bold mb-3">Palestrantes</h4><ul class="grid grid-cols-2 sm:grid-cols-3 gap-2.5"><li class="rounded-xl border border-kr-border bg-kr-dark/60 px-3 py-2.5 text-center"><span class="block text-xs text-slate-400">Alexandre</span><span class="block text-base sm:text-lg font-black text-white uppercase tracking-wide">ADG</span></li><li class="rounded-xl border border-kr-border bg-kr-dark/60 px-3 py-2.5 text-center"><span class="block text-xs text-slate-400">Ricardinho</span><span class="block text-base sm:text-lg font-black text-white uppercase tracking-wide">ACF</span></li><li class="rounded-xl border border-kr-border bg-kr-dark/60 px-3 py-2.5 text-center"><span class="block text-xs text-slate-400">Hashimoto</span><span class="block text-base sm:text-lg font-black text-white uppercase tracking-wide">DRIFT</span></li><li class="rounded-xl border border-kr-border bg-kr-dark/60 px-3 py-2.5 text-center"><span class="block text-xs text-slate-400">Vitor</span><span class="block text-base sm:text-lg font-black text-white uppercase tracking-wide">GENZ</span></li><li class="rounded-xl border border-kr-border bg-kr-dark/60 px-3 py-2.5 text-center"><span class="block text-xs text-slate-400">Rodrigues</span><span class="block text-base sm:text-lg font-black text-white uppercase tracking-wide">AUTO</span></li><li class="rounded-xl border border-kr-border bg-kr-dark/60 px-3 py-2.5 text-center"><span class="block text-xs text-slate-400">Ewerton</span><span class="block text-base sm:text-lg font-black text-white uppercase tracking-wide">BRITO</span></li><li class="rounded-xl border border-kr-border bg-kr-dark/60 px-3 py-2.5 text-center"><span class="block text-xs text-slate-400">Victor</span><span class="block text-base sm:text-lg font-black text-white uppercase tracking-wide">ROCHA</span></li><li class="rounded-xl border border-kr-border bg-kr-dark/60 px-3 py-2.5 text-center"><span class="block text-xs text-slate-400">Claudio</span><span class="block text-base sm:text-lg font-black text-white uppercase tracking-wide">BURATTI</span></li><li class="rounded-xl border border-kr-border bg-kr-dark/60 px-3 py-2.5 text-center"><span class="block text-xs text-slate-400">Mayron</span><span class="block text-base sm:text-lg font-black text-white uppercase tracking-wide">WESLEY</span></li><li class="rounded-xl border border-kr-border bg-kr-dark/60 px-3 py-2.5 text-center"><span class="block text-xs text-slate-400">Victor</span><span class="block text-base sm:text-lg font-black text-white uppercase tracking-wide">TAIRA</span></li></ul></div>
+</div>
+</details>
+</div>
+</section>
+
+<section id="ingressos" class="py-16 lg:py-24 bg-kr-surface/40 border-y border-kr-border scroll-mt-24">
+<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-12">
+<h3 class="text-2xl sm:text-4xl font-black text-white uppercase tracking-tight">Escolha seu ingresso</h3>
+<p class="montserrat-regular text-slate-300 text-sm sm:text-base mt-2">Dois formatos para viver o 1º Encontro Nacional KR Educação</p>
+</div>
+<div class="grid md:grid-cols-2 gap-8 md:gap-6 items-stretch">
+<div class="relative flex flex-col rounded-3xl border border-sky-500/50 bg-gradient-to-b from-sky-500/10 to-kr-card p-6 sm:p-8 shadow-[0_0_28px_rgba(56,189,248,0.10)]">
+<span class="absolute -top-3 left-6 rounded-full bg-sky-400 text-kr-dark text-[10px] sm:text-xs font-black uppercase tracking-widest px-4 py-1">Acesso Essencial</span>
+<span class="montserrat-bold text-sm uppercase tracking-widest text-sky-400">Ingresso</span>
+<h4 class="text-3xl font-black text-white uppercase mt-1">Senior</h4>
+<p class="text-base sm:text-xl font-semibold text-slate-200 mt-2">Tudo para aprender e se conectar</p>
+<ul class="mt-6 space-y-3.5 flex-1"><li class="flex items-start gap-3 text-sm sm:text-base text-slate-100"><svg class="w-5 h-5 flex-shrink-0 mt-0.5 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path></svg><span>Acesso à imersão e às palestras</span></li><li class="flex items-start gap-3 text-sm sm:text-base text-slate-100"><svg class="w-5 h-5 flex-shrink-0 mt-0.5 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path></svg><span>Material de apoio</span></li><li class="flex items-start gap-3 text-sm sm:text-base text-slate-100"><svg class="w-5 h-5 flex-shrink-0 mt-0.5 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path></svg><span>Alimentação</span></li><li class="flex items-start gap-3 text-sm sm:text-base text-slate-500"><span class="w-5 flex-shrink-0 text-center mt-0.5" aria-hidden="true">—</span><span class="line-through decoration-slate-700">Mentoria de 30 minutos com um dos influenciadores</span></li><li class="flex items-start gap-3 text-sm sm:text-base text-slate-500"><span class="w-5 flex-shrink-0 text-center mt-0.5" aria-hidden="true">—</span><span class="line-through decoration-slate-700">Almoço em área VIP</span></li><li class="flex items-start gap-3 text-sm sm:text-base text-slate-500"><span class="w-5 flex-shrink-0 text-center mt-0.5" aria-hidden="true">—</span><span class="line-through decoration-slate-700">Brindes exclusivos</span></li><li class="flex items-start gap-3 text-sm sm:text-base text-slate-500"><span class="w-5 flex-shrink-0 text-center mt-0.5" aria-hidden="true">—</span><span class="line-through decoration-slate-700">Assentos com mesas em frente ao palco</span></li></ul>
+<a href="https://www.sympla.com.br/evento/1-encontro-kr-educacao-by-performance/3561439" target="_blank" rel="noopener" class="mt-8 inline-flex w-full items-center justify-center gap-3 rounded-full border-2 border-sky-400 bg-sky-500/10 hover:bg-sky-400 hover:text-kr-dark text-sky-300 font-black uppercase tracking-wide text-base sm:text-lg px-8 py-3.5 transition-colors"><span>QUERO O SENIOR</span><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path></svg></a>
+</div>
+<div class="relative flex flex-col rounded-3xl border-2 border-[#21fd8f]/70 bg-gradient-to-b from-[#21fd8f]/10 to-kr-card p-6 sm:p-8 shadow-[0_0_40px_rgba(33,253,143,0.18)]">
+<span class="absolute -top-3 left-6 rounded-full bg-[#21fd8f] text-kr-dark text-[10px] sm:text-xs font-black uppercase tracking-widest px-4 py-1">★ Acesso VIP</span>
+<span class="montserrat-bold text-sm uppercase tracking-widest text-[#21fd8f]">Ingresso</span>
+<h4 class="text-3xl font-black text-white uppercase mt-1">Master</h4>
+<p class="text-base sm:text-xl font-semibold text-slate-100 mt-2">Experiência VIP completa</p>
+<ul class="mt-6 space-y-3.5 flex-1"><li class="flex items-start gap-3 text-sm sm:text-base text-slate-100"><svg class="w-5 h-5 flex-shrink-0 mt-0.5 text-[#21fd8f]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path></svg><span>Acesso à imersão e às palestras</span></li><li class="flex items-start gap-3 text-sm sm:text-base text-slate-100"><svg class="w-5 h-5 flex-shrink-0 mt-0.5 text-[#21fd8f]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path></svg><span>Material de apoio</span></li><li class="flex items-start gap-3 text-sm sm:text-base text-slate-100"><svg class="w-5 h-5 flex-shrink-0 mt-0.5 text-[#21fd8f]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path></svg><span>Alimentação</span></li><li class="flex items-start gap-3 text-sm sm:text-base text-slate-100"><svg class="w-5 h-5 flex-shrink-0 mt-0.5 text-[#21fd8f]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path></svg><span>Mentoria de 30 minutos com um dos influenciadores</span></li><li class="flex items-start gap-3 text-sm sm:text-base text-slate-100"><svg class="w-5 h-5 flex-shrink-0 mt-0.5 text-[#21fd8f]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path></svg><span>Almoço em área VIP</span></li><li class="flex items-start gap-3 text-sm sm:text-base text-slate-100"><svg class="w-5 h-5 flex-shrink-0 mt-0.5 text-[#21fd8f]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path></svg><span>Brindes exclusivos</span></li><li class="flex items-start gap-3 text-sm sm:text-base text-slate-100"><svg class="w-5 h-5 flex-shrink-0 mt-0.5 text-[#21fd8f]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path></svg><span>Assentos com mesas em frente ao palco</span></li></ul>
+<a href="https://www.sympla.com.br/evento/1-encontro-kr-educacao-by-performance/3561439" target="_blank" rel="noopener" class="mt-8 inline-flex w-full items-center justify-center gap-3 rounded-full bg-[#21fd8f] hover:bg-emerald-300 text-kr-dark font-black uppercase tracking-wide text-base sm:text-lg px-8 py-3.5 shadow-[0_0_28px_rgba(33,253,143,0.45)] transition-colors"><span>QUERO O MASTER</span><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path></svg></a>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-kr-surface/40 border-y border-kr-border relative" id="depoimentos">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-3xl mx-auto mb-16">
+<span class="montserrat-regular text-xs uppercase tracking-widest text-kr-cyan">Embaixadores</span>
+<h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-3 uppercase">
+            Quem já confirmou presença
+          </h2>
+<p class="text-slate-400 text-sm sm:text-base mt-2">
+            Assista ao recado deles no Instagram da KR Educação.
+          </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+<a href="https://www.instagram.com/p/DduRDTxpwau/" target="_blank" rel="noopener" class="group bg-kr-card border border-kr-border/80 rounded-2xl overflow-hidden flex flex-col hover:border-kr-cyan/60 transition-colors">
+<div class="kr-ambassador-photo-wrap relative overflow-hidden bg-kr-dark/60">
+<img src="assets/img/instrutor-genz.webp" alt="Vitor GenZ — embaixador KR Educação" loading="lazy" class="kr-ambassador-photo w-full h-full group-hover:scale-105 transition-transform duration-300">
+<div class="absolute top-3 right-3 w-9 h-9 rounded-full bg-black/60 backdrop-blur-sm flex items-center justify-center">
+<svg class="w-4 h-4 text-white" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-1">
+<p class="text-slate-300 text-sm italic mb-6 leading-relaxed flex-1">
+                "O automobilismo e o mundo das oficinas têm uma conexão muito forte. Bora acelerar!"
+              </p>
+<div class="pt-4 border-t border-slate-800">
+<h3 class="text-white font-bold text-sm">Vitor GenZ</h3>
+<span class="montserrat-regular text-xs text-slate-400">Piloto Nascar • ver no Instagram</span>
+</div>
+</div>
+</a>
+
+<a href="https://www.instagram.com/kr.educa/reel/Ddrzg08pKxI/" target="_blank" rel="noopener" class="group bg-kr-card border border-kr-border/80 rounded-2xl overflow-hidden flex flex-col hover:border-kr-cyan/60 transition-colors">
+<div class="kr-ambassador-photo-wrap relative overflow-hidden bg-kr-dark/60">
+<img src="assets/img/instrutor-adg.webp" alt="ADG — embaixador KR Educação" loading="lazy" class="kr-ambassador-photo w-full h-full group-hover:scale-105 transition-transform duration-300">
+<div class="absolute top-3 right-3 w-9 h-9 rounded-full bg-black/60 backdrop-blur-sm flex items-center justify-center">
+<svg class="w-4 h-4 text-white" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-1">
+<p class="text-slate-300 text-sm italic mb-6 leading-relaxed flex-1">
+                "Comece a ter gestão o mais rápido possível. Quanto mais você entender sua operação, melhor o seu crescimento."
+              </p>
+<div class="pt-4 border-t border-slate-800">
+<h3 class="text-white font-bold text-sm">ADG</h3>
+<span class="montserrat-regular text-xs text-slate-400">Instrutor KR Educação • ver no Instagram</span>
+</div>
+</div>
+</a>
+
+<a href="https://www.instagram.com/p/DdjXzY9JyMg/" target="_blank" rel="noopener" class="group bg-kr-card border border-kr-border/80 rounded-2xl overflow-hidden flex flex-col hover:border-kr-cyan/60 transition-colors">
+<div class="kr-ambassador-photo-wrap relative overflow-hidden bg-kr-dark/60">
+<img src="assets/img/instrutor-hashimoto.webp" alt="Hashimoto — embaixador KR Educação" loading="lazy" class="kr-ambassador-photo w-full h-full group-hover:scale-105 transition-transform duration-300">
+<div class="absolute top-3 right-3 w-9 h-9 rounded-full bg-black/60 backdrop-blur-sm flex items-center justify-center">
+<svg class="w-4 h-4 text-white" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-1">
+<p class="text-slate-300 text-sm italic mb-6 leading-relaxed flex-1">
+                "Se o seu navio não tiver um comandante, ele naufraga. Fica à deriva, vai bater, vai afundar."
+              </p>
+<div class="pt-4 border-t border-slate-800">
+<h3 class="text-white font-bold text-sm">Hashimoto Drift</h3>
+<span class="montserrat-regular text-xs text-slate-400">Instrutor KR Educação • ver no Instagram</span>
+</div>
+</div>
+</a>
+</div>
+</div>
+</section>
+
+<section id="local" class="pt-14 pb-0 scroll-mt-32">
+<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid md:grid-cols-2 items-stretch rounded-3xl border border-kr-border bg-kr-card/70 overflow-hidden">
+<div class="p-8 sm:p-10 flex flex-col justify-center text-center md:text-left">
+<span class="montserrat-regular text-xs uppercase tracking-widest text-kr-cyan">Local do evento</span>
+<h3 class="text-2xl sm:text-3xl font-black text-white mt-2 uppercase leading-tight">Apogeo Nobre<br>Alphaville</h3>
+<address class="not-italic text-sm sm:text-base text-slate-300 mt-3 leading-relaxed">Avenida Tamboré, 1009 · Alphaville<br>Barueri, SP</address>
+<p class="text-sm text-slate-400 mt-2">19 de novembro · Evento presencial</p>
+<div class="mt-6 flex justify-center md:justify-start">
+<a class="btn-star-border" href="https://www.google.com/maps/search/?api=1&amp;query=Apogeo+Nobre+Alphaville%2C+Avenida+Tambor%C3%A9%2C+1009%2C+Barueri+SP" data-apple="https://maps.apple.com/?q=Apogeo%20Nobre%20Alphaville&amp;address=Avenida%20Tambor%C3%A9%2C%201009%2C%20Alphaville%2C%20Barueri%2C%20SP" target="_blank" rel="noopener">
+<span class="border-gradient-bottom" aria-hidden="true"></span>
+<span class="border-gradient-top" aria-hidden="true"></span>
+<span class="inner-content px-8 py-3 text-sm gap-2"><span>COMO CHEGAR</span><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 7l5 5m0 0l-5 5m5-5H6" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path></svg></span>
+</a>
+</div>
+</div>
+<div class="relative min-h-[220px] md:min-h-[300px] border-t md:border-t-0 md:border-l border-kr-border">
+<svg viewBox="0 0 400 280" class="absolute inset-0 w-full h-full" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+<defs>
+<pattern id="krmap-grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#16213a" stroke-width="1"/></pattern>
+<radialGradient id="krmap-glow" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#21fd8f" stop-opacity=".45"/><stop offset="100%" stop-color="#21fd8f" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="400" height="280" fill="#0a1020"/>
+<rect width="400" height="280" fill="url(#krmap-grid)"/>
+<path d="M-10 210 C 90 190, 150 120, 260 110 S 380 60, 420 40" fill="none" stroke="#1d2b4a" stroke-width="16" stroke-linecap="round"/>
+<path d="M-10 210 C 90 190, 150 120, 260 110 S 380 60, 420 40" fill="none" stroke="#2a3d68" stroke-width="2" stroke-dasharray="8 8"/>
+<path d="M130 300 C 150 230, 190 170, 215 135 S 250 40, 250 -20" fill="none" stroke="#1d2b4a" stroke-width="12" stroke-linecap="round"/>
+<path d="M300 300 C 290 240, 330 200, 420 190" fill="none" stroke="#1d2b4a" stroke-width="9" stroke-linecap="round"/>
+<circle cx="215" cy="130" r="70" fill="url(#krmap-glow)"/>
+<circle cx="215" cy="130" r="26" fill="none" stroke="#21fd8f" stroke-opacity=".5" stroke-width="2"/>
+<path d="M215 150 C 203 134, 196 125, 196 114 a19 19 0 1 1 38 0 c0 11 -7 20 -19 36z" fill="#21fd8f"/>
+<circle cx="215" cy="114" r="7" fill="#0a1020"/>
+</svg>
+<div class="absolute left-4 bottom-4 rounded-full bg-black/60 backdrop-blur px-3 py-1.5 text-xs text-white font-semibold">Alphaville · Barueri/SP</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="py-20 lg:py-28 relative overflow-hidden" id="oferta">
+
+<div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+<div class="w-[500px] h-[500px] bg-blue-600/20 rounded-full blur-3xl"></div>
+</div>
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+<div id="oferta-checkout" class="bg-gradient-to-b from-kr-surface to-kr-card border-2 border-blue-500/60 rounded-3xl p-6 sm:p-12 shadow-2xl relative">
+<div class="text-center mt-2 mb-8">
+<h3 class="text-2xl sm:text-4xl font-black text-white uppercase tracking-tight">
+              A Chave Certa para o Lucro da sua Oficina
+            </h3>
+<p class="text-slate-400 text-sm sm:text-base mt-2">
+              Acesso completo ao treinamento KR Educação + Materiais Complementares
+            </p>
+</div>
+
+<div class="mb-8 text-center" data-countdown-target="2026-10-23T23:59:00-03:00">
+<p class="text-xs uppercase tracking-widest text-slate-400 mb-3">Preço do Lote 1 encerra em</p>
+<div class="countdown-output flex items-center justify-center gap-2 sm:gap-4" aria-live="off">
+<div class="bg-kr-dark/80 border border-blue-800 rounded-xl px-3 py-2 sm:px-5 sm:py-3 min-w-[64px] sm:min-w-[84px]">
+<span class="countdown-days block text-2xl sm:text-4xl font-black text-white tabular-nums">--</span>
+<span class="block text-[10px] sm:text-xs text-slate-400 uppercase mt-1">Dias</span>
+</div>
+<div class="bg-kr-dark/80 border border-blue-800 rounded-xl px-3 py-2 sm:px-5 sm:py-3 min-w-[64px] sm:min-w-[84px]">
+<span class="countdown-hours block text-2xl sm:text-4xl font-black text-white tabular-nums">--</span>
+<span class="block text-[10px] sm:text-xs text-slate-400 uppercase mt-1">Horas</span>
+</div>
+<div class="bg-kr-dark/80 border border-blue-800 rounded-xl px-3 py-2 sm:px-5 sm:py-3 min-w-[64px] sm:min-w-[84px]">
+<span class="countdown-minutes block text-2xl sm:text-4xl font-black text-white tabular-nums">--</span>
+<span class="block text-[10px] sm:text-xs text-slate-400 uppercase mt-1">Min</span>
+</div>
+<div class="bg-kr-dark/80 border border-blue-800 rounded-xl px-3 py-2 sm:px-5 sm:py-3 min-w-[64px] sm:min-w-[84px]">
+<span class="countdown-seconds block text-2xl sm:text-4xl font-black text-kr-cyan tabular-nums">--</span>
+<span class="block text-[10px] sm:text-xs text-slate-400 uppercase mt-1">Seg</span>
+</div>
+</div>
+</div>
+
+<div class="pt-8 border-t border-kr-border mb-8">
+<h4 class="montserrat-regular text-xs text-kr-lightBlue uppercase tracking-wider mb-4 flex items-center gap-2">
+<span class="montserrat-bold">BÔNUS INCLUSOS NESTA TURMA:</span>
+            </h4>
+<div class="space-y-3 text-sm text-slate-300">
+<div class="flex items-center justify-between border-b border-slate-800/80 pb-2">
+<span class="">• Planilha Automática de Precificação de Hora Técnica e Peças</span>
+<span class="text-xs text-slate-400 font-semibold line-through">R$ 497,00</span>
+</div>
+<div class="flex items-center justify-between border-b border-slate-800/80 pb-2">
+<span class="">• Modelo de Checklist de Entrada e Termo de Garantia Jurídico</span>
+<span class="text-xs text-slate-400 font-semibold line-through">R$ 297,00</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="">• Acesso à Comunidade VIP de Donos de Oficina de Alta Performance</span>
+<span class="text-xs text-slate-400 font-semibold line-through">R$ 997,00</span>
+</div>
+</div>
+</div>
+
+<div class="text-center mb-8">
+<span class="text-slate-300 text-sm font-bold uppercase tracking-widest">Apenas por</span>
+<div class="mt-2 flex items-center justify-center gap-2" data-cu="p">
+<span class="text-2xl sm:text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 to-[#21fd8f] tracking-tight">R$</span>
+<span class="price-countup-int text-7xl sm:text-8xl font-black text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 to-[#21fd8f] tracking-tight drop-shadow-[0_0_18px_rgba(33,253,143,0.55)] tabular-nums">297</span>
+<span class="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 to-[#21fd8f]">,00</span>
+</div>
+<p class="mt-2 inline-flex items-center gap-2 rounded-full border border-[#21fd8f]/60 bg-[#21fd8f]/15 px-4 py-1.5 text-sm sm:text-base font-black uppercase tracking-widest text-[#21fd8f]">+ 1 convidado</p>
+</div>
+
+<div class="flex items-center justify-center gap-2 mb-6 text-emerald-400 text-xs sm:text-sm font-semibold">
+<svg class="w-4 h-4 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path clip-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" fill-rule="evenodd"></path></svg>
+Vagas limitadas — evento presencial, 19 de novembro
+</div>
+
+<div class="max-w-md mx-auto">
+<a class="btn-star-border w-full" href="https://www.sympla.com.br/evento/1-encontro-kr-educacao-by-performance/3561439" target="_blank" rel="noopener">
+<span class="border-gradient-bottom" aria-hidden="true"></span>
+<span class="border-gradient-top" aria-hidden="true"></span>
+<span class="inner-content w-full justify-center px-8 py-3 text-base sm:px-10 sm:py-4 sm:text-xl gap-3">
+<span class="">GARANTIR MINHA VAGA</span>
+<svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path></svg>
+</span>
+</a>
+<p class="text-center text-[11px] text-slate-400 mt-3 flex items-center justify-center gap-2">
+<svg class="w-3.5 h-3.5 text-emerald-400" fill="currentColor" viewBox="0 0 20 20"><path clip-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" fill-rule="evenodd"></path></svg>
+              Ambiente de pagamento 100% seguro e criptografado
+            </p>
+</div>
+</div>
+</div>
+
+<div class="relative bg-gradient-to-br from-blue-950/80 to-kr-dark/90 rounded-2xl p-6 pt-8 mt-6 border-2 border-kr-cyan/60 shadow-neon-blue">
+<div class="absolute -top-3 left-6 bg-gradient-to-r from-kr-cyan to-blue-500 text-kr-dark font-black text-[10px] sm:text-xs px-4 py-1 rounded-full uppercase tracking-widest shadow-lg">
+Bônus Diferencial Exclusivo
+</div>
+<div class="flex items-start gap-4">
+<div class="flex-shrink-0 w-12 h-12 rounded-xl bg-kr-cyan/15 border border-kr-cyan/40 flex items-center justify-center">
+<svg class="w-6 h-6 text-kr-cyan" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l1.586-1.586z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<div class="flex-1">
+<h4 class="text-base sm:text-lg font-bold text-white">Bate-papo exclusivo com o influencer</h4>
+<p class="text-sm text-slate-300 mt-1 leading-relaxed">
+Um momento de conexão real durante o evento — pergunte, troque ideia e tire uma foto com quem inspira sua trajetória no automotivo.
+</p>
+</div>
+<span class="hidden sm:block text-xs text-slate-400 font-semibold line-through whitespace-nowrap">R$ 397,00</span>
+</div>
+</div>
+</section>
+
+<section class="py-12 bg-kr-surface/30 border-y border-kr-border" id="garantia">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex flex-col sm:flex-row items-center gap-6 text-center sm:text-left">
+<div class="w-24 h-24 sm:w-28 sm:h-28 flex-shrink-0 bg-blue-900/30 border-2 border-blue-500 rounded-full flex flex-col items-center justify-center shadow-neon-blue">
+<span class="text-2xl sm:text-3xl font-black text-white">19</span>
+<span class="text-[10px] font-bold text-kr-cyan uppercase">NOV</span>
+</div>
+<div>
+<h3 class="text-xl font-bold text-white uppercase">Evento presencial<br>vagas limitadas</h3>
+<p class="text-sm text-slate-400 mt-2 leading-relaxed">
+              Encontro único, com data marcada e capacidade limitada do espaço. Garanta sua vaga agora — depois de esgotar, só na próxima edição.
+            </p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="py-20 lg:py-24" id="faq">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-3xl sm:text-4xl font-black text-white uppercase tracking-tight">
+            Perguntas Frequentes
+          </h2>
+<p class="montserrat-regular text-slate-300 mt-3 text-base sm:text-lg">
+            Tire suas dúvidas antes de garantir sua vaga.
+          </p>
+</div>
+<div class="space-y-4">
+<details class="bg-kr-card border border-kr-border rounded-xl p-5 sm:p-6 group cursor-pointer">
+<summary class="text-lg sm:text-xl font-bold text-white flex justify-between items-center gap-4 list-none">
+<span class="">Onde e quando será o evento?</span>
+<span class="text-kr-cyan group-open:rotate-180 transition-transform font-bold text-2xl flex-shrink-0" aria-hidden="true">↓</span>
+</summary>
+<p class="montserrat-regular text-base sm:text-lg text-slate-200 mt-4 leading-relaxed">
+              No dia 19 de novembro, no Apogeo Nobre Alphaville — Avenida Tamboré, 1009, Alphaville, Barueri/SP. Use o botão "Como chegar" da seção "Local do evento" para abrir a rota no seu aplicativo de mapas.
+            </p>
+</details>
+<details class="bg-kr-card border border-kr-border rounded-xl p-5 sm:p-6 group cursor-pointer">
+<summary class="text-lg sm:text-xl font-bold text-white flex justify-between items-center gap-4 list-none">
+<span class="">Para quem é o evento KR Educação?</span>
+<span class="text-kr-cyan group-open:rotate-180 transition-transform font-bold text-2xl flex-shrink-0" aria-hidden="true">↓</span>
+</summary>
+<p class="montserrat-regular text-base sm:text-lg text-slate-200 mt-4 leading-relaxed">
+              Para donos, sócios e mecânicos de oficinas, autocenters e funilarias que querem aprender a atrair mais clientes e melhorar a prospecção do negócio.
+            </p>
+</details>
+<details class="bg-kr-card border border-kr-border rounded-xl p-5 sm:p-6 group cursor-pointer">
+<summary class="text-lg sm:text-xl font-bold text-white flex justify-between items-center gap-4 list-none">
+<span class="">Preciso ter experiência em vendas ou marketing para aproveitar o evento?</span>
+<span class="text-kr-cyan group-open:rotate-180 transition-transform font-bold text-2xl flex-shrink-0" aria-hidden="true">↓</span>
+</summary>
+<p class="montserrat-regular text-base sm:text-lg text-slate-200 mt-4 leading-relaxed">
+              Não. As palestras são didáticas e aplicáveis desde o primeiro dia, direto da experiência de especialistas que já ajudaram centenas de oficinas a prospectar e fechar mais clientes.
+            </p>
+</details>
+<details class="bg-kr-card border border-kr-border rounded-xl p-5 sm:p-6 group cursor-pointer">
+<summary class="text-lg sm:text-xl font-bold text-white flex justify-between items-center gap-4 list-none">
+<span class="">O que está incluso no meu ingresso para o evento?</span>
+<span class="text-kr-cyan group-open:rotate-180 transition-transform font-bold text-2xl flex-shrink-0" aria-hidden="true">↓</span>
+</summary>
+<p class="montserrat-regular text-base sm:text-lg text-slate-200 mt-4 leading-relaxed">
+              Acesso completo às palestras com especialistas em prospecção e crescimento para oficinas, área de marcas, networking com outros donos e mecânicos, e materiais de apoio entregues no evento.
+            </p>
+</details>
+<details class="bg-kr-card border border-kr-border rounded-xl p-5 sm:p-6 group cursor-pointer">
+<summary class="text-lg sm:text-xl font-bold text-white flex justify-between items-center gap-4 list-none">
+<span class="">Preciso levar algo ou me preparar antes do evento?</span>
+<span class="text-kr-cyan group-open:rotate-180 transition-transform font-bold text-2xl flex-shrink-0" aria-hidden="true">↓</span>
+</summary>
+<p class="montserrat-regular text-base sm:text-lg text-slate-200 mt-4 leading-relaxed">
+              Não. Basta chegar com o ingresso confirmado — o cronograma das palestras e os materiais de apoio são entregues no local. Chegue com antecedência para aproveitar a área de marcas e o networking.
+            </p>
+</details>
+</div>
+</div>
+</section>
+
+<section class="py-14 border-t border-kr-border relative overflow-hidden">
+<div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+<div class="w-[400px] h-[300px] bg-blue-600/15 rounded-full blur-3xl"></div>
+</div>
+<div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+<h2 class="text-2xl sm:text-3xl font-black text-white uppercase tracking-tight">
+Sua oficina não muda sozinha. <span class="kr-underline montserrat-bold text-white">Comece agora.</span>
+</h2>
+<a class="btn-star-border mt-6 inline-flex" href="https://www.sympla.com.br/evento/1-encontro-kr-educacao-by-performance/3561439" target="_blank" rel="noopener">
+<span class="border-gradient-bottom" aria-hidden="true"></span>
+<span class="border-gradient-top" aria-hidden="true"></span>
+<span class="inner-content px-8 py-3 text-base gap-3">
+<span class="">GARANTIR MINHA VAGA</span>
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path></svg>
+</span>
+</a>
+</div>
+</section>
+
+</main>
+
+<footer class="border-t border-kr-border bg-[#05060A] py-14 text-slate-400 text-xs">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-center pb-10 border-b border-slate-900">
+
+<div class="flex items-center gap-3">
+<img alt="KR Educação" class="h-10 w-auto object-contain opacity-90" src="assets/img/logo-kr-educacao.svg">
+</div>
+</div>
+<div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left text-[11px] text-slate-500">
+<p class="">© 2026 KR Educação. Todos os direitos reservados. CNPJ: 66.924.661/0001-11.</p>
+<p class="">Este produto não garante a obtenção de resultados sem a devida aplicação do método proposto.</p>
+</div>
+<div class="pt-4 flex items-center justify-center md:justify-start gap-4 text-[11px]">
+<button type="button" class="underline hover:text-kr-cyan transition-colors" data-kr-legal-open="privacidade">Política de Privacidade</button>
+<span class="text-slate-700">•</span>
+<button type="button" class="underline hover:text-kr-cyan transition-colors" data-kr-legal-open="termos">Termos de Uso</button>
+</div>
+</div>
+</footer>
+
+<div id="kr-legal-modal" class="kr-legal-modal" data-open="false" aria-hidden="true">
+<div class="kr-legal-modal-backdrop" data-kr-legal-close></div>
+<div class="kr-legal-modal-panel" role="dialog" aria-modal="true" aria-labelledby="kr-legal-modal-title">
+<div class="kr-legal-modal-header">
+<h2 id="kr-legal-modal-title" class="text-white font-bold text-lg"></h2>
+<button type="button" class="kr-legal-modal-close" data-kr-legal-close aria-label="Fechar">&times;</button>
+</div>
+<div class="kr-legal-modal-body">
+
+<div data-kr-legal-panel="privacidade">
+<h3>Política de Privacidade</h3>
+<p><em>Última atualização: 2026.</em></p>
+<p>Esta Política de Privacidade descreve como a <strong>KR Educação Automotiva</strong> (CNPJ 66.924.661/0001-11) coleta, usa, armazena e protege os dados pessoais de visitantes e inscritos nesta página, em conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018 — LGPD).</p>
+
+<h4>1. Dados coletados</h4>
+<p>Coletamos os dados fornecidos voluntariamente em formulários de inscrição e compra (nome, e-mail, telefone/WhatsApp, e, quando aplicável, dados de pagamento processados por terceiros), além de dados de navegação (cookies, origem do acesso, dispositivo) coletados por ferramentas de análise e de anúncios (ex.: Meta Ads, Google Ads).</p>
+
+<h4>2. Finalidade do tratamento</h4>
+<p>Os dados são utilizados para: (i) processar sua inscrição/compra de ingresso; (ii) enviar comunicações sobre o evento (confirmações, lembretes, alterações de programação); (iii) fins de marketing e remarketing da KR Educação e suas campanhas; (iv) cumprimento de obrigações legais e fiscais.</p>
+
+<h4>3. Compartilhamento de dados</h4>
+<p>Podemos compartilhar dados com prestadores de serviço estritamente necessários à operação (processadores de pagamento, plataformas de e-mail/CRM, plataformas de anúncios), sempre limitado ao necessário para a finalidade contratada. Não vendemos dados pessoais a terceiros.</p>
+
+<h4>4. Cookies</h4>
+<p>Esta página utiliza cookies próprios e de terceiros para funcionamento, mensuração de audiência e otimização de campanhas publicitárias. Ao continuar navegando, você concorda com o uso de cookies nos termos desta política.</p>
+
+<h4>5. Seus direitos</h4>
+<p>Nos termos da LGPD, você pode solicitar a qualquer momento acesso, correção, anonimização, portabilidade ou eliminação dos seus dados, bem como revogar consentimentos, mediante contato pelos canais oficiais da KR Educação.</p>
+
+<h4>6. Segurança</h4>
+<p>Adotamos medidas técnicas e administrativas razoáveis para proteger os dados pessoais contra acessos não autorizados, perda, alteração ou divulgação indevida.</p>
+
+<h4>7. Alterações</h4>
+<p>Esta política pode ser atualizada periodicamente. A versão vigente é sempre a publicada nesta página.</p>
+</div>
+
+<div data-kr-legal-panel="termos" hidden>
+<h3>Termos de Uso</h3>
+<p><em>Última atualização: 2026.</em></p>
+<p>Ao acessar este site e/ou adquirir ingresso para o evento <strong>1º Encontro Nacional KR Educação</strong>, promovido pela KR Educação Automotiva (CNPJ 66.924.661/0001-11), você concorda com os termos abaixo.</p>
+
+<h4>1. Objeto</h4>
+<p>Este site tem como finalidade divulgar e comercializar o acesso a um evento presencial de caráter educacional/motivacional voltado a donos, gestores e profissionais de oficinas automotivas.</p>
+
+<h4>2. Natureza do conteúdo e ausência de garantia de resultado</h4>
+<p>O conteúdo apresentado no evento tem caráter educacional e informativo. A KR Educação não garante resultados financeiros, de faturamento ou de desempenho de negócio a nenhum participante, uma vez que estes dependem de fatores fora de nosso controle, incluindo a aplicação individual do conteúdo por cada participante.</p>
+
+<h4>3. Ingressos, pagamento e cancelamento</h4>
+<p>O ingresso dá direito exclusivamente ao acesso ao evento na data, local e condições informadas nesta página, sujeitos a alteração por motivo de força maior, caso fortuito ou determinação das autoridades competentes, sem que isso gere direito a indenização além do eventual reembolso do valor pago, a critério da organização. A disponibilidade de vagas é limitada e pode se esgotar sem aviso prévio.</p>
+
+<h4>4. Uso de imagem</h4>
+<p>Ao participar do evento, o participante autoriza, a título gratuito, o uso de sua imagem e voz eventualmente captadas em fotos e vídeos produzidos durante o evento, para fins de divulgação institucional e publicitária da KR Educação em quaisquer mídias, sem limite de território, pelo prazo legal aplicável.</p>
+
+<h4>5. Depoimentos e menções de embaixadores</h4>
+<p>Os depoimentos, menções e conteúdos de embaixadores/instrutores exibidos nesta página refletem experiências e opiniões pessoais e não constituem promessa de resultado a terceiros.</p>
+
+<h4>6. Propriedade intelectual</h4>
+<p>Todo o conteúdo deste site (textos, marca, layout, materiais do evento) é de propriedade da KR Educação ou de seus licenciantes, sendo vedada a reprodução não autorizada.</p>
+
+<h4>7. Limitação de responsabilidade</h4>
+<p>Em nenhuma hipótese a responsabilidade da KR Educação perante o participante excederá o valor efetivamente pago pelo ingresso, salvo nos casos em que a lei brasileira determine de forma diversa e imperativa.</p>
+
+<h4>8. Foro</h4>
+<p>Fica eleito o foro da comarca da sede da KR Educação para dirimir quaisquer controvérsias oriundas destes Termos, com renúncia a qualquer outro, por mais privilegiado que seja.</p>
+</div>
+
+</div>
+</div>
+</div>
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/countup-react.js"></script>
+
+</body></html>
